@@ -1,0 +1,112 @@
+.background {
+    background: linear-gradient(to right, #209151, #40439F);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.website {
+    background: linear-gradient(to left, black, rgba(0, 0, 0, 0.8));
+    width: 90vw;
+    height: 90vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px 60px;
+    border-bottom: 1px solid white;
+}
+
+header h2 {
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 100px;
+}
+
+header nav ul li {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.header-buttons button {
+    background-color: #404042;
+    padding: 7px 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    max-width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.content h3 {
+    color: white;
+    font-size: 6rem;
+    letter-spacing: 5px;
+}
+
+.content h1 {
+    background-image: linear-gradient(to right, #03f357, #5b3ffc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 10rem;
+    letter-spacing: 5px;
+}
+
+.content p {
+    color: white;
+    margin: 20px 0 20px 0;
+}
+
+.content-buttons button {
+    padding: 8px 30px;
+    border: none;
+    outline: none;
+    margin-right: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.content-buttons #start {
+    color: white;
+    background: linear-gradient(to right, #03f357, #5b3ffc);
+}
+
+.content .img {
+    position: absolute;
+    bottom: -190px;
+    right: 42%;
+}
+
+.content .img img {
+    width: 200px;
+}
+
+.content .img #shadow {
+    position: absolute;
+    box-shadow: 0px -10px 500px red;
+    width: 200px;
+    height: 200px;
+    bottom: -20px;
+}
