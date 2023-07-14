@@ -1,14 +1,21 @@
 import './Home.css';
 import { AiOutlineUser, AiOutlineShopping } from 'react-icons/ai';
 import { BsArrowRight } from 'react-icons/bs';
+import { useState } from 'react';
 
 export default function Home() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <div className="background" style={{ width: '100%', position: 'fixed', minHeight: '100vh', objectFit: 'cover', zIndex: '-1' }}>
       <div className='website'>
         <header>
           <h2>SWEDEN</h2>
-          <nav>
+          <nav className={`menu ${showMenu ? 'show' : ''}`}>
             <ul>
               <li>Products</li>
               <li>Pricing</li>
@@ -18,9 +25,14 @@ export default function Home() {
               <li>Download</li>
             </ul>
           </nav>
-          <div className='header-buttons'>
+          <div className={`header-buttons menu ${showMenu ? 'show' : ''}`}>
             <button>Sign Up <AiOutlineUser /></button>
             <button><AiOutlineShopping /> Cart</button>
+          </div>
+          <div className='bx-menu' onClick={toggleMenu}>
+            <div className='bar'></div>
+            <div className='bar'></div>
+            <div className='bar'></div>
           </div>
         </header>
         <div className='content'>
